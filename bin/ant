@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require 'ant-client'
+
+command, action = ARGV.shift(2)
+args, opts = Thor::Options.split(ARGV)
+case command
+  when 'weblink'
+    Ant::Command::Weblink.new(args, opts).invoke(action)
+  when 'library'
+    Ant::Command::Library.new(args, opts).invoke(action)
+  else
+   Ant::Command::Library.start ['-h']
+   Ant::Command::Weblink.start ['-h']
+end
