@@ -10,7 +10,9 @@ Install the lastest stable release:
 
 In rails, add it to you Gemfile:
 
-   	gem 'ant-client', :require => 'ant_client'
+```ruby
+gem 'ant-client', :require => 'ant_client'
+```
 
 ## Usage
 
