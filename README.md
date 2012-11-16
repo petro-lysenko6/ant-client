@@ -37,30 +37,31 @@ Ant::HMAC.verify? object, {id: 1, ts: timestamp, token: token}
 
 ### Command line
 
-- Ant cmd line is cmd tool to manage Bookmarks, show Weblink and Library for Ant.com.
+Ant cmd line is cmd tool to manage Bookmarks, show Weblink and Library for Ant.com.
 
-  # to show help and usage type
+  * show help and usage type:
   ```ruby
   ant
   ant --help
   ```
 
+  * create show weblink:
   ```ruby
-  # create show weblink
   ant weblink create 1 izwkXcOeiyn4yWBCnnyaSmMUGvxp5h35 google.com --server localhost:3000
   ant weblink show 1 izwkXcOeiyn4yWBCnnyaSmMUGvxp5h36 80 --server localhost:3000
   ```
 
+  * create show library:
   ```ruby
-  # create show library
   ant library create 1 izwkXcOeiyn4yWBCnnyaSmMUGvxp5h36 cmd_lib hello --server localhost:3000
   ant library show 1 izwkXcOeiyn4yWBCnnyaSmMUGvxp5h36 1 --server localhost:3000
   ```
 
 ### TODO:
-    1. pending tests and tests for Ant::Client, Ant::Command
-    2. add comments and generate documentation for Ant::Client and cmd
-    3. add more restfool actions
-    4. refactor code
+
+1. pending tests and tests for Ant::Client, Ant::Command
+2. add comments and generate documentation for Ant::Client and cmd
+3. add more restfool actions
+4. refactor code
 
 Ant.com ruby client
